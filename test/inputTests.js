@@ -3,18 +3,18 @@ var input = require('../lib/input');
 
 describe("Input", function() {
 
-	describe('argCount', function() {
+	describe('validArgvCount', function() {
 		
-		it('should be no more than 3 values', function(){
+		it('should return true for 3 values', function(){
 			var argv = [
 				'/usr/bin/node',
 				'/path/to/file.js',
 				'3'
 			];
 
-			var results = input.argCount(argv);
+			var results = input.validArgvCount(argv);
 
-			expect(results).to.equal(3);
+			expect(results).to.be.true;
 		});
 
 	});
