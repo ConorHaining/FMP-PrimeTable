@@ -54,6 +54,16 @@ describe("Input", function() {
 
 		});
 
+		it('should return false for anything that isn\'t an integer', function(){
+
+			var string = 'foobar';
+
+			var results = input.validInputArg(string);
+
+			expect(results).to.be.false;
+
+		});
+
 	});
 
 });
