@@ -36,7 +36,7 @@ describe("Input", function() {
 		
 		it('should return true for a postive integer', function(){
 
-			var int = 3;
+			var int = '3';
 
 			var results = input.validInputArg(int);
 
