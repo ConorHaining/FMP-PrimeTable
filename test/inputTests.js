@@ -17,6 +17,19 @@ describe("Input", function() {
 			expect(results).to.be.true;
 		});
 
+		it('should return false for anything other than 3 values', function(){
+			var argv = [
+				'/usr/bin/node',
+				'/path/to/file.js',
+				'foo',
+				'bar'
+			];
+
+			var results = input.validArgvCount(argv);
+
+			expect(results).to.be.false;
+		});
+
 	});
 
 });
