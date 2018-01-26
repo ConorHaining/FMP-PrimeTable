@@ -44,6 +44,16 @@ describe("Input", function() {
 
 		});
 
+		it('should return false for a negative integer', function(){
+
+			var int = '-3';
+
+			var results = input.validInputArg(int);
+
+			expect(results).to.be.false;
+
+		});
+
 	});
 
 });
