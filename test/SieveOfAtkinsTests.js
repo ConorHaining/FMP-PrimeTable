@@ -11,7 +11,7 @@ describe("SieveOfAtkins", function() {
 
 			var primes = SieveOfAtkins.primeList(n);
 
-			expect(primes).to.equal(validPrimes);
+			expect(primes).to.deep.equal(validPrimes);
 
 		});
 
