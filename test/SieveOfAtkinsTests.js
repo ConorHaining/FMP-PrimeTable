@@ -1,5 +1,5 @@
 var expect = require('chai').expect;
-var input = require('../lib/SieveOfAtkins');
+var SieveOfAtkins = require('../lib/SieveOfAtkins');
 
 describe("SieveOfAtkins", function() {
 
