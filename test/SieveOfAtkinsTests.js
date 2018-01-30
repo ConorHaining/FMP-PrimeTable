@@ -5,6 +5,36 @@ describe("SieveOfAtkins", function() {
 
 	describe('primeList', function() {
 
+		it('should display the first prime for n = 1', function() {
+			var n = 1;
+			var validPrimes = [2];
+
+			var primes = SieveOfAtkins.primeList(n);
+
+			expect(primes).to.deep.equal(validPrimes);
+
+		});
+
+		it('should display the first 2 primes for n = 2', function() {
+			var n = 2;
+			var validPrimes = [2, 3];
+
+			var primes = SieveOfAtkins.primeList(n);
+
+			expect(primes).to.deep.equal(validPrimes);
+
+		});
+
+		it('should display the first 3 primes for n = 3', function() {
+			var n = 3;
+			var validPrimes = [2, 3, 5];
+
+			var primes = SieveOfAtkins.primeList(n);
+
+			expect(primes).to.deep.equal(validPrimes);
+
+		});
+
 		it('should display the first 20 primes for n = 20', function() {
 			var n = 20;
 			var validPrimes = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71];
