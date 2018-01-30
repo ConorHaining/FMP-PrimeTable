@@ -22,19 +22,19 @@ for (var r = 0; r < (primes.length + 1); r++) {
 
 	// Add the buffer if on the first row
 	if(r == 0) {
-		process.stdout.write('\t');
+		process.stdout.write('_|\t');
 	}
 
 	for (var c = 0; c < (primes.length + 1); c++) {
 
 		// Print out primes if on the first row
 		if(r == 0 && c != primes.length) {
-			process.stdout.write(primes[c] + '\t');		
+			process.stdout.write(`\u001B[4m${primes[c]}\t\u001B[24m`);
 		} else if (r > 0 && c < primes.length + 1) {
 
 			// Print out prime when in the first column
 			if(c == 0) {
-				process.stdout.write(primes[r - 1] + '\t');
+				process.stdout.write(primes[r - 1] + '|\t');
 			} else {
 				var n = primes[r - 1] * primes[c - 1];
 
