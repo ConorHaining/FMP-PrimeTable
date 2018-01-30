@@ -5,7 +5,7 @@ describe("SieveOfAtkins", function() {
 
 	describe('primeList', function() {
 
-		it('should display the first prime for n = 1', function() {
+		it('should return the first prime for n = 1', function() {
 			var n = 1;
 			var validPrimes = [2];
 
@@ -15,7 +15,7 @@ describe("SieveOfAtkins", function() {
 
 		});
 
-		it('should display the first 2 primes for n = 2', function() {
+		it('should return the first 2 primes for n = 2', function() {
 			var n = 2;
 			var validPrimes = [2, 3];
 
@@ -25,7 +25,7 @@ describe("SieveOfAtkins", function() {
 
 		});
 
-		it('should display the first 3 primes for n = 3', function() {
+		it('should return the first 3 primes for n = 3', function() {
 			var n = 3;
 			var validPrimes = [2, 3, 5];
 
@@ -35,7 +35,7 @@ describe("SieveOfAtkins", function() {
 
 		});
 
-		it('should display the first 20 primes for n = 20', function() {
+		it('should return the first 20 primes for n = 20', function() {
 			var n = 20;
 			var validPrimes = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71];
 
@@ -45,7 +45,7 @@ describe("SieveOfAtkins", function() {
 
 		});
 
-		it('should display the first 100 primes for n = 100', function() {
+		it('should return the first 100 primes for n = 100', function() {
 			var n = 100;
 			var validPrimes = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101, 103, 107, 109, 113, 127, 131, 137, 139, 149, 151, 157, 163, 167, 173, 179, 181, 191, 193, 197, 199, 211, 223, 227, 229, 233, 239, 241, 251, 257, 263, 269, 271, 277, 281, 283, 293, 307, 311, 313, 317, 331, 337, 347, 349, 353, 359, 367, 373, 379, 383, 389, 397, 401, 409, 419, 421, 431, 433, 439, 443, 449, 457, 461, 463, 467, 479, 487, 491, 499, 503, 509, 521, 523, 541];
 
