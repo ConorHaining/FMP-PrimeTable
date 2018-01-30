@@ -17,3 +17,35 @@ if (!input.validInputArg(argv[2])) {
 }
 
 var primes = SieveOfAtkins.primeList(argv[2]);
+
+for (var r = 0; r < (primes.length + 1); r++) {
+
+	// Add the buffer if on the first row
+	if(r == 0) {
+		process.stdout.write('\t');
+	}
+
+	for (var c = 0; c < (primes.length + 1); c++) {
+
+		// Print out primes if on the first row
+		if(r == 0 && c != primes.length) {
+			process.stdout.write(primes[c] + '\t');		
+		} else if (r > 0 && c < primes.length + 1) {
+
+			// Print out prime when in the first column
+			if(c == 0) {
+				process.stdout.write(primes[r - 1] + '\t');
+			} else {
+				var n = primes[r - 1] * primes[c - 1];
+
+				process.stdout.write(n + '\t');
+			}
+
+		}
+
+	}
+
+	// Create a new line after each iteration
+	process.stdout.write('\n');
+
+}
