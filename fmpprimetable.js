@@ -15,3 +15,5 @@ if (!input.validInputArg(argv[2])) {
 	console.log('Please provide a positive integer');
 	process.exit(1);
 }
+
+var primes = SieveOfAtkins.primeList(argv[2]);
