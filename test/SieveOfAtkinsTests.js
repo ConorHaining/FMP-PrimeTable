@@ -5,6 +5,9 @@ describe("SieveOfAtkins", function() {
 
 	describe('primeList', function() {
 
+		// Increase the timeout since these compuations can be long
+		this.timeout(20000);
+
 		it('should return the first prime for n = 1', function() {
 			var n = 1;
 			var validPrimes = [2];
